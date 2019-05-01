@@ -5,9 +5,9 @@ Vue.component('headers',{
         <header>
             <div class="head">
                 <div class="iconmenu">
-                    <div><img v-if="btnopen" @click="upmenu"             src="/images/open.svg">
+                    <div><img v-if="btnopen" @click="upmenu"             src="./images/open.svg">
                     </div>
-                    <div><img v-if="btnclose" @click="downmenu"          src="/images/close.svg">
+                    <div><img v-if="btnclose" @click="downmenu"          src="./images/close.svg">
                     </div>
                 </div>
                 <transition name="fade">
