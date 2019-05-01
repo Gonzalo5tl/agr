@@ -62,7 +62,6 @@ header .head{
     align-self: center;
     justify-content: center;
     align-items: center;
-    
 }
 
 .mobmenu ul{
@@ -88,7 +87,7 @@ header .head{
 }
 
 .idiomenu #ien{
-    background-image: url('../images/usa.png');
+    background-image: url('/images/usa.png');
     max-width: 22%;
     margin: var(--center);
     background-position: center;
@@ -97,7 +96,7 @@ header .head{
     cursor: pointer;
 }
 .idiomenu #ies{
-    background-image: url('../images/mex.png');
+    background-image: url('/images/mex.png');
     max-width: 22%;
     margin: var(--center);
     background-position: center;
@@ -105,19 +104,6 @@ header .head{
     background-size: 100%;
     cursor: pointer;
 }
-
-
-/* .mobmenu li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: rgba(184, 15, 15, 0);
-    -webkit-transition: width .3s;
-    -o-transition: width .3s;
-    transition: width .3s;
-}
-.mobmenu li:hover::after{width: 7%;} */
 
 /* * * * *  BANNER  * * * * */
 .banner{
@@ -135,31 +121,31 @@ header .head{
     
     display: grid;
     grid-template-columns: none;
-    grid-auto-rows: 58% 5% 2%;
+    grid-template-rows: 58% 5% 2%;
 }
 
 @keyframes fading {
-    0% {background: url("../images/banner8.jpg");background-position: center center;background-size: cover;
+    0% {background: url("/images/banner8.jpg");background-position: center center;background-size: cover;
     }
-   35% {background: url("../images/banner8.jpg");background-size: cover;
+   35% {background: url("/images/banner8.jpg");background-size: cover;
     }
-    55% {background: url("../images/banner11.jpg");background-size: cover;background-position: center center;
+    55% {background: url("/images/banner11.jpg");background-size: cover;background-position: center center;
     }
-    75% {background: url("../images/banner11.jpg");background-size: cover;
+    75% {background: url("/images/banner11.jpg");background-size: cover;
     }
-    100% {background: url("../images/banner8.jpg");background-position: center center;background-size: cover; 
+    100% {background: url("/images/banner8.jpg");background-position: center center;background-size: cover; 
   }
   }
   @-webkit-keyframes fading {
-    0% {background: url("../images/banner8.jpg");background-position: center center;background-size: cover;
+    0% {background: url("/images/banner8.jpg");background-position: center center;background-size: cover;
     }
-   35% {background: url("../images/banner8.jpg");background-size: cover;
+   35% {background: url("/images/banner8.jpg");background-size: cover;
     }
-    55% {background: url("../images/banner11.jpg");background-size: cover;background-position: center center;
+    55% {background: url("/images/banner11.jpg");background-size: cover;background-position: center center;
     }
-    75% {background: url("../images/banner11.jpg");background-size: cover;
+    75% {background: url("/images/banner11.jpg");background-size: cover;
     }
-    100% {background: url("../images/banner8.jpg");background-position: center center;background-size: cover; 
+    100% {background: url("/images/banner8.jpg");background-position: center center;background-size: cover; 
   }
   }
 
