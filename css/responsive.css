@@ -1,0 +1,15 @@
+
+/******* IPAD >568px ***********/
+@media screen and (min-width:35.5rem){}
+
+/* Notebook > 769px*/
+@media screen and (min-width:48.1rem){}
+
+/* Normal Desktop > 1024px*/
+@media screen and (min-width:64rem){}
+
+/* Large Desktop > 1440px */
+@media screen and (min-width:64rem){}
+
+/* Super Large Desktop > 1720 */
+@media screen and (min-width:108rem){}

@@ -1,0 +1,29 @@
+:root{
+    --w100:100%;
+    --w90:90%;
+    --center:0rem auto;
+    --tofront:99;
+    --sizephone:25.625rem;
+}
+
+/* titles */
+@font-face {
+    font-family: "title";
+    src: url("/css/fonts/titles/TungstenRounded-Book.woff") format('woff');
+}
+
+
+p,li,button,a{font-family: 'Poppins', sans-serif; font-weight: 300; color: #fff;}
+h1,h2,h3{font-family: 'title';}
+
+@-webkit-keyframes fadeIn{
+	from{opacity: 0;} to{opacity: 1;}
+}
+@-moz-keyframes fadeIn{
+	from{opacity: 0;} to{opacity: 1;}
+}
+@keyframes fadeIn{
+	from{opacity: 0;} to{opacity: 1;}
+}
+
+
