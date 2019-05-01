@@ -1,0 +1,17 @@
+ /*******     Landscape   ******/
+ @media only screen 
+ and (min-device-width:25rem) 
+ and (max-device-width:50.9rem)
+ and (orientation:landscape){
+    header{height: 2.8rem;}
+    header .head{max-width: 43.75rem;}
+    .head .iconmenu{width: 7%;align-self: flex-end;}
+    .head .mobmenu{top: 2.8rem;height: calc(100% - 2.8rem);}
+    .mobmenu ul{width: 35%;}
+    .mobmenu li{padding: .8rem 0rem;margin-bottom: .5rem;}
+    .idiomenu #ien{max-width: 18%;}
+    .idiomenu #es{max-width: 18%;}
+    .banner{grid-auto-rows: 60% 15% 2%;}
+    .bannertit h1{font-size: 4rem;}
+    .bannertxt p{font-size: 1.2rem;}
+ }
