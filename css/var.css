@@ -3,18 +3,19 @@
     --w90:90%;
     --center:0rem auto;
     --tofront:99;
-    --sizephone:25.625rem;
+    --sizephone:88%;
+    --transit:all .9s cubic-bezier(.19,1,.22,1);
 }
 
 /* titles */
 @font-face {
     font-family: "title";
-    src: url("../css/fonts/titles/TungstenRounded-Book.woff") format('woff');
+    src: url("/css/fonts/titles/TungstenRounded-Book.woff") format('woff');
 }
 
-
-p,li,button,a{font-family: 'Poppins', sans-serif; font-weight: 300; color: #fff;}
-h1,h2,h3{font-family: 'title';}
+p,button{font-family: 'Poppins', sans-serif; font-weight: 300; color: #fff;}
+h1,h2,h3,li,a{font-family: 'title'; color: #fff;}
+li{list-style: none;cursor: pointer;}
 
 @-webkit-keyframes fadeIn{
 	from{opacity: 0;} to{opacity: 1;}

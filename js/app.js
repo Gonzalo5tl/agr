@@ -1,7 +1,7 @@
 const messages = {
     name:'messages',
     template:'#hometemplate',
-
+    
     template: //html 
     `
         <div id=hometemplate>
@@ -9,7 +9,6 @@ const messages = {
             <banner></banner>
         </div>
     `,
-
     es:{
         banner:{
             title:'Tu asesor fiscal',
@@ -56,7 +55,6 @@ var router = new VueRouter({
     ]
   });
 
- 
 new Vue({
     element:'#app',
     i18n,

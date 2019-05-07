@@ -1,15 +1,201 @@
 
 /******* IPAD >568px ***********/
-@media screen and (min-width:35.5rem){}
+@media screen and (min-width:35.5rem){
+    .head .iconmenu{width: 9%;}
+    .idiomenu #ien{max-width: 16%;}
+    .idiomenu #ies{max-width: 16%;}
+}
 
 /* Notebook > 769px*/
-@media screen and (min-width:48.1rem){}
+@media only screen and (min-width:48rem){
+     header{
+        height: 5rem;
+    }
+    .head .iconmenu{width: 8%;}
+    .head .mobmenu{
+        top: 5rem;
+        height: calc(100% - 5rem);
+    }
+    .banner{grid-template-rows: 50% 5% 2%}
+    .bannertit h1{font-size: 5.8rem}
+    .banner .bannertxt{margin: -4rem auto;}
+    .bannertxt p{font-size: 1.75rem}
+    .btngo a{font-size: 1.63rem}
+    .mobmenu li {
+        font-size: 1.65rem;
+        padding: 3rem 0rem;
+        margin-bottom: .6rem;
+    }
+}
 
 /* Normal Desktop > 1024px*/
-@media screen and (min-width:64rem){}
+@media only screen and (min-width:64rem){
+    .head .iconmenu{display: none;}
+    .banner{
+        height: 65vh; 
+    }
+    .banner::before{
+        height: 65vh;
+    }
+    .banner{grid-template-rows: 53% 5% 2%}
+    .head .staticmenu{
+        display: flex !important;
+        margin: var(--center); 
+        min-width: 50rem;
+        max-width: 50rem;
+        /* border: solid 1px khaki; */
+        flex-wrap: wrap;
+    }
+    .staticmenu nav{
+        width: 93%;
+        margin: var(--center);
+        align-self: flex-end;
+        height: auto;
+        /* border: solid 1px rgb(217, 140, 240); */
+        margin-top: 1.8rem;
+    }
+    .staticmenu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .staticmenu li{
+        font-size: 1.150rem;
+        letter-spacing: .4px;
+    }
+    .staticmenu a:hover{color: #fc6d47;
+        text-shadow: 0px 13px 0 
+        rgba(242, 135, 5, 0.274);
+        transition: var(--transit);
+    }
+    .staticmenu i:hover{color: #fc6d47;
+        text-shadow: 0px 13px 0 
+        rgba(242, 135, 5, 0.274);
+        transition: var(--transit);
+    }
+    .staticmenu .fa-globe-americas{
+        font-size: 1.250rem !important;
+        margin:-2rem 0rem !important;  
+    }
+    .head .modalidiom{
+        position: absolute;
+	    z-index: 999;
+        width: 19%;
+        margin-top: 6rem;
+        background: 
+        rgba(245, 245, 250, 0.980);
+        border-radius: .6rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 10% 90%;
+        padding: .3rem .6rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+}
+    .head .modalidiom:hover{
+        box-shadow: 0 2px 7px 0 
+        rgb(106, 163, 151);
+        
+    }
+    .modalidiom :nth-child(1){
+        cursor: pointer;
+        font-size: 1.7rem;
+        color: rgba(75, 75, 75, 0.938);
+        display: flex;
+    }
+    .modalidiom .flag img{
+        width: 35%;
+        margin: 0 auto;
+        padding: 0rem !important;
+    }
+    .overlay{
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: 
+        rgba(128, 176, 255, 0.555);
+        background-color: #0e2b69b9;
+        background-color: #19426aab;
+    }
+    .bannertit h1{font-size: 6.9rem;}
+    .bannertxt p{font-size: 1.6rem}
+    .btngo a{font-size: 1.3rem}
+}
 
 /* Large Desktop > 1440px */
-@media screen and (min-width:64rem){}
+@media only screen and (min-width:64rem){
+    .banner{height: 88vh;}
+    .banner::before{height: 88vh;}
+    .head .staticmenu{
+        min-width: 60rem;
+        max-width: 60rem;
+        /* border: solid 1px khaki; */
+    }
+    .staticmenu a{
+        font-family: 'title' !important;
+        font-weight: 500;
+        font-size: 1.650rem;
+        letter-spacing: .05rem;
+        text-transform: uppercase;
+    }
+
+    .banner{grid-template-rows: 53% 8% 2%}
+    .bannertit h1{font-size: 7.4rem;}
+    .bannertxt p{font-size: 1.6rem}
+    .btngo a{font-size: 1.2rem;
+        font-family: 'title' !important;
+        font-weight: 500;
+        font-size: 1.9rem;
+        letter-spacing: .05rem;
+        padding: .5rem 1.6rem
+    }
+    .modalidiom .flag img{width: 30%;}
+    .head .modalidiom{width: 17%;padding: .7rem .5rem;
+    }
+}
 
 /* Super Large Desktop > 1720 */
-@media screen and (min-width:108rem){}
+@media only screen and (min-width:108rem){}
+
+.bounce-enter-active {
+    -webkit-animation: bounce-in .7s;
+            animation: bounce-in .7s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+  @-webkit-keyframes bounce-in {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    50% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes bounce-in {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    50% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  
+  
