@@ -5,9 +5,9 @@ Vue.component('headers',{
         <header>
             <div class="head">
                 <div class="iconmenu">
-                    <div><img v-if="btnopen" @click="upmenu"             src="/images/open.svg">
+                    <div><img v-if="btnopen" @click="upmenu"             src="./images/open.svg">
                     </div>
-                    <div><img v-if="btnclose" @click="downmenu"          src="/images/close.svg">
+                    <div><img v-if="btnclose" @click="downmenu"          src="./images/close.svg">
                     </div>
                 </div>
                 <transition name="fade">
@@ -50,10 +50,10 @@ Vue.component('headers',{
                                 </i>
                             </div>
                             <div v-if="enidiom" class="flag">
-                                <img src="/images/usa.png">
+                                <img src="./images/usa.png">
                             </div>
                             <div v-if="esidiom" class="flag">
-                                <img src="/images/mex.png">
+                                <img src="./images/mex.png">
                             </div>
                         </div>
                     </transition>
